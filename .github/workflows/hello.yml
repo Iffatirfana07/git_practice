@@ -1,0 +1,14 @@
+name: Hello CI
+on:
+push:
+jobs:
+hello:
+runs-on: ubuntu-22.04
+steps:
+-uses: actions/checkout@v4
+-name: say Hello
+run: |
+echo "Hello from CI"
+date
+echo ${{ github.sha }}
+
