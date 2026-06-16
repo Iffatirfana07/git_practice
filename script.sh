@@ -2,5 +2,5 @@
 
 NAME=iffat
 
-echo Hello $NAME
-echo `date`
+echo "Hello $NAME"
+date
